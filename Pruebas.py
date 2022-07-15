@@ -15,5 +15,6 @@ if tipo_nave == "lanzadora":
     nombre_nav.encender_motor("encendido")
     nombre_nav.soltar_carga()
 
-elif tipo_nave == "no tripulada":
+else:
+    print("Exito")
 
