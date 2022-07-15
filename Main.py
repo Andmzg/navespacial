@@ -2,14 +2,14 @@ from Lazadora import *
 from No_Tripulados import *
 from Tripulados import *
 
-ciclo = 0
-while ciclo != 4:
+opcion = 0
+while opcion != 4:
 
     print("1.- Crear nave lanzadora")
     print("2.- Crear nave No tripulada")
     print("3.- Crear nave tripulada")
     print("4.- Para salir del programa")
-    ciclo = int(input("Ingrese la opcion deseada: "))
+    opcion = int(input("Ingrese la opcion deseada: "))
 
     print("------CREACION DE NAVE---------")
     nombre_nav = input('Nombre de la nave: ')
@@ -17,8 +17,7 @@ while ciclo != 4:
     peso_nave = input('Peso: ')
     pais_from = input('Pais de origen: ')
 
-
-    if ciclo == 1:
+    if opcion == 1:
 
         carga_util = input("Peso de la carga util: ")
         tipo_carga = input("Que tipo de carga lleva: ")
@@ -28,7 +27,7 @@ while ciclo != 4:
         nombre_nav.soltar_carga()
         print("------Se termino la nave lanzadora-------")
 
-    elif ciclo == 2:
+    elif opcion == 2:
         cuerpo_estudio = input("Cuerpo de estudio: ")
         en_orbita = input("Esta en orbita: ")
 
@@ -36,7 +35,7 @@ while ciclo != 4:
         nombre_nav.datos_tierra()
         print("------Se termino la nave no tripulada-------")
 
-    elif ciclo == 3:
+    elif opcion == 3:
         capacidad_tripu = input("Capacidad de tripulantes: ")
         destino = input("Su destino: ")
         mision_tripu = input("Mision a realiza: ")
