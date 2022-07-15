@@ -1,4 +1,5 @@
 from Lazadora import *
+from No_Tripulados import *
 tipo_nave = input("Escoga un tipo de nave: \n -lanzadora \n -no tripuladas \n -tripuladas \n >>>")
 
 nombre_nav = input('Nombre de la nave: ')
@@ -16,4 +17,7 @@ if tipo_nave == "lanzadora":
     nombre_nav.soltar_carga()
 
 elif tipo_nave == "no tripulada":
+    cuerpo_estudio = input("Cuerpo de estudio: ")
 
+
+    nombre_nav = no_tripulad(tipo_comustible, peso_nave, pais_from)
