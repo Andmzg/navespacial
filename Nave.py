@@ -1,5 +1,5 @@
 class Nave:
-    def __init__(self, combustible, peso, pais, motor = "apagado"):
+    def __init__(self, combustible, peso, pais, motor="apagado"):
 
         self.combustible = combustible
         self.peso = peso
@@ -11,7 +11,7 @@ class Nave:
             print("Motor apagado")
 
         elif estado == "encendido":
-            self.motor == estado
+            self.motor = estado
             print(f'El motor esta encendido. Y se esta usando combustible {self.combustible}. '
                   f'Sale del pais {self.pais}')
         else:

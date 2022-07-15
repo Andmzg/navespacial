@@ -1,6 +1,6 @@
 from Nave import *
 
-class tripulado:
+class tripulado(Nave):
     def __init__(self, capacidad_tripu, destino, mision_tripu, combustible_t, peso_t, pais_t):
         self.capacidad_tripu = capacidad_tripu
         self.destino = destino
