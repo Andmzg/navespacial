@@ -8,6 +8,10 @@ class tripulado(Nave):
 
         super().__init__(combustible_t, peso_t, pais_t)
 
+    def Fcohetes(self):
+        self.cohete[nombre_nav] = () #USAR DICCIONARIOS Y POLIMORFISMO / COMPARABLE CON MONGO DB
+
+
     def acople(self):
         print("La nave se aacopla a la estacion espacial")
 

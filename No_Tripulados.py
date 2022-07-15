@@ -7,6 +7,8 @@ class no_tripulado(Nave):
         self.cuerpo_estudio = cuerpo_estudio
         self.en_orbita = en_orbita
 
+
+
     def datos_tierra(self):
         print(f"se estan enviando datos a la tierra sobre {self.cuerpo_estudio} que es el objeto a estudiar")
 
