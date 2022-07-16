@@ -1,6 +1,12 @@
-from Nave import *
+from INave import *
+from Nave_Interface import NaveInterface
 
-class Lanzadora(Nave):
+
+class Lanzadora(INave, NaveInterface):
+    frase = "La nave ha sido lanzada"
+    elevarse_f = "como Snoop Dog"
+    explota_f =  "BOOM"
+
     def __init__(self, carga_util, tipo_carga, combustible_Lanza, peso_Lanza, pais_Lanza):
         super().__init__(combustible_Lanza, peso_Lanza, pais_Lanza)
 
@@ -8,6 +14,19 @@ class Lanzadora(Nave):
         self.tipo_carga = tipo_carga
 
     def soltar_carga(self):
-        print("Luego de 10 min La carga se suelta")
+        print(f"Luego de 10 min La carga se suelta. {self.pais}")
+
+    #Sobreescritura
+
+    def enviar_dato(self):
+         super().enviar_dato()
+
+    def elevarse(self):
+        super().elevarse()
+
+    def explota(self):
+        super().explota()
 
 
+# prueba = Lanzadora("a", "b", "c", "d", "e")
+# prueba.enviar_dato()
