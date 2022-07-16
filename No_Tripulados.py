@@ -2,7 +2,7 @@ from INave import *
 from Nave_Interface import NaveInterface
 
 
-class no_tripulado(INave, NaveInterface):
+class No_tripulado(INave, NaveInterface):
     frase = "soy un bot"
     elevarse_f = "Soy como sucrsito"
     explota_f = "soy un bot. Tambien merezco amor"

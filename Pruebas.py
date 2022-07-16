@@ -1,4 +1,4 @@
-from Lazadora import *
+from Lanzadora import *
 from No_Tripulados import *
 from Tripulados import *
 from Acciones import *

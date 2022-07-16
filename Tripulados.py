@@ -2,7 +2,7 @@ from INave import *
 from Nave_Interface import NaveInterface
 
 
-class tripulado(INave, NaveInterface):
+class Tripulado(INave, NaveInterface):
     frase = "SOS"
     elevarse_f = "Estamos en el aire"
     explota_f =  "SOS X 2"
