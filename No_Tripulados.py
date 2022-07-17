@@ -21,7 +21,7 @@ class Notripulado(INave, NaveInterface):
         self.en_orbita = en_orbita
 
         self.caracteristicas = {
-            "nave": "lo tripulada",
+            "nave": "no tripulada",
             "pais": pais_nt,
             "peso": peso_nt,
             "combustible": combustible_nt,
