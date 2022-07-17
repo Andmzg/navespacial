@@ -12,7 +12,7 @@ class Lanzadora(INave, NaveInterface):
 
     # Valores que se sobreescriben en los metodos heredados
     frase = "La nave ha sido lanzada"
-    elevarse_f = "como Snoop Dog"
+    elevarse_f = "Estamos por los aires"
     explota_f = "BOOM"
 
     # Constructor de la clase Lanzadora
@@ -31,7 +31,7 @@ class Lanzadora(INave, NaveInterface):
         # Variables de instacia. Esta vez es un diccionario. Al diccionario se le pasan los datos heredados y
         # propios de la calse. Asi se puede guardar en la Db
         self.caracteristicas = {
-            "nave": "Lanzadora",
+            "nave": "lanzadora",
             "pais": paislanza,
             "peso": pesolanza,
             "combustible": combustiblelanza,

@@ -8,8 +8,8 @@ class Notripulado(INave, NaveInterface):
 
     # Valores que se sobreescriben en los metodos heredados
     frase = "soy un bot"
-    elevarse_f = "Soy como sucrsito"
-    explota_f = "soy un bot. Tambien merezco amor"
+    elevarse_f = "Me elevo"
+    explota_f = "BOOM"
 
     def __init__(self, cuerpo_estudio, en_orbita, combustible_nt, peso_nt, pais_nt):
 
@@ -21,7 +21,7 @@ class Notripulado(INave, NaveInterface):
         self.en_orbita = en_orbita
 
         self.caracteristicas = {
-            "nave": "No tripulada",
+            "nave": "lo tripulada",
             "pais": pais_nt,
             "peso": peso_nt,
             "combustible": combustible_nt,
