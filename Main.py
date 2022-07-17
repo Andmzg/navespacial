@@ -1,5 +1,5 @@
 from Lanzadora import Lanzadora
-from  No_Tripulados import No_tripulado
+from  No_Tripulados import Notripulado
 from  Tripulados import Tripulado
 from DbConexion.Repositorio import Repositorio
 
@@ -22,7 +22,6 @@ while opcion != 5:
         peso_nave = input('Peso en toneladas: ')
         pais_from = input('Pais de origen: ')
 
-
     if opcion == 1:
 
         carga_util = input("Peso de la carga util: ")
@@ -40,8 +39,9 @@ while opcion != 5:
         cuerpo_estudio = input("Cuerpo de estudio: ")
         en_orbita = input("Esta en orbita: ")
 
-        nombre_nav = No_tripulado(cuerpo_estudio, en_orbita, tipo_comustible, peso_nave, pais_from)
+        nombre_nav = Notripulado(cuerpo_estudio, en_orbita, tipo_comustible, peso_nave, pais_from)
         nombre_nav.enviar_dato()
+        nombre_nav.insertar()
         print("\n")
         print("------Se termino la nave no tripulada-------")
 
@@ -52,6 +52,7 @@ while opcion != 5:
 
         nombre_nav = Tripulado(capacidad_tripu, destino, mision_tripu, tipo_comustible, peso_nave, pais_from)
         nombre_nav.acople()
+        nombre_nav.insertar()
 
         print("\n")
         print("------Se termino la nave tripulada-------")

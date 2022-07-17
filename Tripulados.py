@@ -1,22 +1,34 @@
 from INave import *
 from Nave_Interface import NaveInterface
+from DbConexion.Repositorio import Repositorio
 
 
 class Tripulado(INave, NaveInterface):
+
     frase = "SOS"
     elevarse_f = "Estamos en el aire"
     explota_f =  "SOS X 2"
 
     def __init__(self, capacidad_tripu, destino, mision_tripu, combustible_t, peso_t, pais_t):
+        super().__init__(combustible_t, peso_t, pais_t)
+
         self.capacidad_tripu = capacidad_tripu
         self.destino = destino
         self.mision_tripo = mision_tripu
 
-        super().__init__(combustible_t, peso_t, pais_t)
+        self.caracteristicas = {
+            "nave": "No tripulada",
+            "pais": pais_t,
+            "peso": peso_t,
+            "combustible": combustible_t,
+            "capacidad de tripulantes": capacidad_tripu,
+            "destino de la mision": destino,
+            "mision": mision_tripu,
+        }
 
 
     def acople(self):
-        print("La nave se aacopla a la estacion espacial")
+        print("La nave se acopla a la estacion espacial")
 
     def aterrizar(self):
         print("Aterrizando")
